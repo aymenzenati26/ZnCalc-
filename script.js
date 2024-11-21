@@ -1,5 +1,6 @@
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
+const startVoiceBtn = document.getElementById("startVoiceBtn");
 const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
 
@@ -76,10 +77,8 @@ buttons.forEach((button) => {
   button.addEventListener("click", (e) => calculate(e.target.dataset.value));
 });
 
-// Start listening for voice commands when a specific key is pressed
-document.addEventListener("keydown", (e) => {
-  if (e.key === "v") {
-    speak("Voice recognition started. Speak your calculation.");
-    recognition.start();
-  }
+// Start listening for voice commands when the "Start Voice Recognition" button is clicked
+startVoiceBtn.addEventListener("click", () => {
+  speak("Voice recognition started. Speak your calculation.");
+  recognition.start();
 });
