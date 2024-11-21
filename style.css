@@ -1,11 +1,13 @@
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -13,6 +15,7 @@ body {
   justify-content: center;
   background: #e0e3eb;
 }
+
 .container {
   position: relative;
   max-width: 300px;
@@ -23,6 +26,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
+
 .display {
   height: 80px;
   width: 100%;
@@ -35,11 +39,13 @@ body {
   pointer-events: none;
   cursor: default;
 }
+
 .buttons {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .buttons button {
   padding: 10px;
   border-radius: 6px;
@@ -49,13 +55,32 @@ body {
   background-color: #eee;
   transition: background-color 0.2s, transform 0.1s;
 }
+
 .buttons button:hover {
   background-color: #dcdcdc;
 }
+
 .buttons button:active {
   background-color: #ccc;
   transform: scale(0.99);
 }
+
 .operator {
   color: #2f9fff;
+}
+
+.start-voice-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #2f9fff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-voice-btn:hover {
+  background-color: #2487c1;
 }
