@@ -32,6 +32,7 @@ body {
   font-size: 25px;
   color: #000e1a;
   pointer-events: none;
+  cursor: default;
 }
 .buttons {
   display: grid;
@@ -45,8 +46,13 @@ body {
   font-size: 20px;
   cursor: pointer;
   background-color: #eee;
+  transition: background-color 0.2s, transform 0.1s;
+}
+.buttons button:hover {
+  background-color: #dcdcdc;
 }
 .buttons button:active {
+  background-color: #ccc;
   transform: scale(0.99);
 }
 .operator {
